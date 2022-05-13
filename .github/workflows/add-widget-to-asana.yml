@@ -12,7 +12,7 @@ jobs:
         uses: vadymBalaban/create-app-attachment-github-action@v1.1
         id: postAttachment
         with:
-          asana-secret: F5ZRKVXJGQT3RTKY7HHUXFQMAXQL63RXJZANAMXB3VC35PEHIJI2JOPE
+          asana-secret: ${{ secrets.ASANA_SECRET }}
           blocked-projects: |
             1117470676484494
       - name: Get status
